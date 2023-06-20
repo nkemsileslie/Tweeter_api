@@ -13,3 +13,4 @@ class Tweet(models.Model):
 
 class Comment(models.Model):
     message = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
